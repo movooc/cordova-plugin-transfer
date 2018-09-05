@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-transfer-pause-download" version="1.0.0">
+    id="cordova-plugin-transfer" version="1.0.3">
     <name>cordova plugin pause resume download file</name>
     <description>Use the way Pause And Resume to download or fileStream files for Cordova/PhoneGap</description>
     <license>Apache 2.0</license>
     <keywords>cordova,android,pause,and,resume,download,file,files,stream</keywords>
 
-    <hook src="hooks/appBeforeBuild2MakePRD.js" type="before_build"/>
+    <hook src="hooks/appBeforeBuild2MakeCTD.js" type="before_build"/>
     <dependency id="cordova-plugin-file-transfer@1.7.1" version="1.7.1" />
     <!-- info -->
     <info>
     </info>
 
-    <js-module src="www/jsv2/PauseResumeDownload.js">
-        <clobbers target="PRD" />
+    <js-module src="www/jsv2/CordovaTransferDownload.js">
+        <clobbers target="CTD" />
     </js-module>
 
 </plugin>

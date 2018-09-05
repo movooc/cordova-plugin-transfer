@@ -1,8 +1,8 @@
 {
     "name": "cordova-plugin-transfer",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Use the way Pause and Resume to download files or fileStream for Cordova and PhoneGap",
-    "main": "www/jsv2/PauseResumeDownload.js",
+    "main": "www/jsv2/CordovaTransferDownload.js",
     "keywords": [
         "cordova",
         "android",
