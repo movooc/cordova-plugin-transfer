@@ -1,0 +1,27 @@
+{
+    "name": "cordova-plugin-transfer",
+    "version": "1.0.1",
+    "description": "Use the way Pause and Resume to download files or fileStream for Cordova and PhoneGap",
+    "main": "www/jsv2/PauseResumeDownload.js",
+    "keywords": [
+        "cordova",
+        "android",
+        "pause",
+        "and",
+        "resume",
+        "download",
+        "file",
+        "files",
+        "stream"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/movooc/cordova-plugin-transfer"
+    },
+    "author": "movooc",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/movooc/cordova-plugin-transfer"
+}
