@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-transfer" version="1.0.3">
+    id="cordova-plugin-transfer" version="1.0.4">
     <name>cordova plugin pause resume download file</name>
     <description>Use the way Pause And Resume to download or fileStream files for Cordova/PhoneGap</description>
     <license>Apache 2.0</license>
