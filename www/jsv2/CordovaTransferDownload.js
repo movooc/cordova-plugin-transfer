@@ -169,7 +169,8 @@ CTD.prototype._getUrlFileLength = function (uri, options, cb) {
     var temp = this.disk + '/temp.zip';
     var isCall = false;
 
-    uri = encodeURI(uri);
+    // remove encodeURI
+    // uri = encodeURI(uri);
 
     fileTransfer.download(
         uri,
