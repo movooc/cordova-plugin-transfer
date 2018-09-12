@@ -61,6 +61,7 @@ CTD.prototype.download = function (url, fileURl, successCallback, errorCallback,
     this.successCallback = successCallback;
     this.errorCallback = errorCallback;
     this.trustAllHosts = trustAllHosts || false;
+    this.realTotal = true;
     this.options = options;
 
     _this.url = url;
@@ -69,6 +70,7 @@ CTD.prototype.download = function (url, fileURl, successCallback, errorCallback,
         if (err) {
             errorCallback && errorCallback(err);
         } else {
+            _this.realTotal = len>0;
             _this.totalLen = len || _options.totalSize || 0;
             _this._updateInfoAndDownload();
         }
@@ -89,10 +91,10 @@ CTD.prototype._updateInfoAndDownload = function () {
             _this.start = 0;
         } else {
             _this.start = len;
-            /*if(_this.totalLen && len >= _this.totalLen){
+            if(_this.totalLen && len >= _this.totalLen && _this.realTotal){
                 _this.successCallback(fileEntry);
                 return;
-            }*/
+            }
         }
         console.log('repeat : ' + _this.repeat);
         console.log('start : ' + _this.start);
