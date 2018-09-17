@@ -91,10 +91,10 @@ CTD.prototype._updateInfoAndDownload = function () {
             _this.start = 0;
         } else {
             _this.start = len;
-            if(_this.totalLen && len >= _this.totalLen && _this.realTotal){
-                _this.successCallback(fileEntry);
-                return;
-            }
+            // if(_this.totalLen && len >= _this.totalLen && _this.realTotal){
+            //     _this.successCallback(fileEntry);
+            //     return;
+            // }
         }
         console.log('repeat : ' + _this.repeat);
         console.log('start : ' + _this.start);
