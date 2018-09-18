@@ -88,13 +88,16 @@ CTD.prototype._updateInfoAndDownload = function () {
     var _this = this;
     _this.getFileInfo(_this.fileURl, function (err, len, fileEntry) {
         if (err) {
+            console.log('getFileInfo err---->', err);
             _this.start = 0;
         } else {
             _this.start = len;
-            // if(_this.totalLen && len >= _this.totalLen && _this.realTotal){
-            //     _this.successCallback(fileEntry);
-            //     return;
-            // }
+            if(_this.totalLen && len >= _this.totalLen && _this.realTotal){
+                console.log('getFileInfo len---->', len);
+                console.log('getFileInfo totalLen---->', _this.totalLen);
+                _this.successCallback(fileEntry);
+                return;
+            }
         }
         console.log('repeat : ' + _this.repeat);
         console.log('start : ' + _this.start);
